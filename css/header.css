@@ -1,0 +1,100 @@
+/* Header / Navbar */
+.header .navbar {
+  background: linear-gradient(90deg, #0f0f0f, #1a1a1a);
+  padding: 1rem 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 999;
+}
+
+/* Logo */
+.header .navbar-brand img {
+  width: 140px;
+  transition: transform 0.3s;
+}
+.header .navbar-brand img:hover {
+  transform: scale(1.15) rotate(-3deg);
+}
+
+/* Nav Links */
+.header .nav-link {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.header .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: #ff4c00;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+.header .nav-link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/* Dropdown */
+.header .dropdown {
+  position: relative;
+}
+.header .dropdown-menu {
+  border-radius: 0.6rem;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+  padding: 0.5rem 0;
+  background: #111;
+  min-width: 250px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+
+/* Show dropdown on hover */
+.header .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Dropdown Items */
+.header .dropdown-item {
+  padding: 0.7rem 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  transform: translateX(-20px);
+  opacity: 0;
+}
+.header .dropdown:hover .dropdown-item {
+  animation: slideIn 0.35s forwards;
+}
+.header .dropdown-item:hover {
+  background: #222;
+  color: #ff4c00;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Toggler */
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}

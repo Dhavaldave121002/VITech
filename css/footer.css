@@ -1,0 +1,72 @@
+/* footer.css */
+
+.footer {
+  background: linear-gradient(180deg, #1a1a1a, #000);
+  color: #fff;
+  padding: 4rem 1rem 2rem;
+  font-size: 0.95rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer a:hover {
+  color: #ff4c00;
+  transform: scale(1.1);
+}
+
+.footer .f-logo {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+.footer .footer-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.footer ul li {
+  margin-bottom: 1rem;
+}
+
+.footer .reach svg {
+  color: #ff4c00;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer .reach:hover svg {
+  transform: scale(1.2);
+}
+
+.footer hr {
+  border-color: #444;
+}
+
+.footer .social-menu li a {
+  font-size: 1.5rem;
+  margin-left: 0.7rem;
+  transition: all 0.3s ease;
+}
+.footer .social-menu li a:hover {
+  color: #ff4c00;
+  transform: scale(1.3);
+}
+
+/* Sticky footer at bottom */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto; /* pushes footer down */
+}

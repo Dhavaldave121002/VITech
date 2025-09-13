@@ -1,0 +1,16 @@
+/* main.css */
+
+@import url('header.css');
+@import url('footer.css');
+
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
